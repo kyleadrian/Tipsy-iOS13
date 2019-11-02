@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1632E21F236CF9AE00798FC0 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1632E21E236CF9AE00798FC0 /* ResultsViewController.swift */; };
+		16F91CA8236E25610032B643 /* TipCalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F91CA7236E25610032B643 /* TipCalculatorBrain.swift */; };
 		ADB689532326708D006D4E2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB689522326708D006D4E2B /* AppDelegate.swift */; };
 		ADB689552326708D006D4E2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB689542326708D006D4E2B /* SceneDelegate.swift */; };
-		ADB689572326708D006D4E2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB689562326708D006D4E2B /* ViewController.swift */; };
+		ADB689572326708D006D4E2B /* CaclulatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB689562326708D006D4E2B /* CaclulatorViewController.swift */; };
 		ADB6895A2326708D006D4E2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB689582326708D006D4E2B /* Main.storyboard */; };
 		ADB6895C2326708E006D4E2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB6895B2326708E006D4E2B /* Assets.xcassets */; };
 		ADB6895F2326708E006D4E2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB6895D2326708E006D4E2B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1632E21E236CF9AE00798FC0 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		16F91CA7236E25610032B643 /* TipCalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorBrain.swift; sourceTree = "<group>"; };
 		ADB6894F2326708D006D4E2B /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB689522326708D006D4E2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADB689542326708D006D4E2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ADB689562326708D006D4E2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADB689562326708D006D4E2B /* CaclulatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaclulatorViewController.swift; sourceTree = "<group>"; };
 		ADB689592326708D006D4E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADB6895B2326708E006D4E2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADB6895E2326708E006D4E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1632E220236CF9BC00798FC0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ADB689562326708D006D4E2B /* CaclulatorViewController.swift */,
+				1632E21E236CF9AE00798FC0 /* ResultsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		16F91CA5236E25220032B643 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADB689582326708D006D4E2B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16F91CA6236E25410032B643 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16F91CA7236E25610032B643 /* TipCalculatorBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		ADB689462326708D006D4E2B = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +87,9 @@
 			children = (
 				ADB689522326708D006D4E2B /* AppDelegate.swift */,
 				ADB689542326708D006D4E2B /* SceneDelegate.swift */,
-				ADB689562326708D006D4E2B /* ViewController.swift */,
-				ADB689582326708D006D4E2B /* Main.storyboard */,
+				16F91CA6236E25410032B643 /* Model */,
+				16F91CA5236E25220032B643 /* View */,
+				1632E220236CF9BC00798FC0 /* Controllers */,
 				ADB6895B2326708E006D4E2B /* Assets.xcassets */,
 				ADB6895D2326708E006D4E2B /* LaunchScreen.storyboard */,
 				ADB689602326708E006D4E2B /* Info.plist */,
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADB689572326708D006D4E2B /* ViewController.swift in Sources */,
+				ADB689572326708D006D4E2B /* CaclulatorViewController.swift in Sources */,
 				ADB689532326708D006D4E2B /* AppDelegate.swift in Sources */,
+				16F91CA8236E25610032B643 /* TipCalculatorBrain.swift in Sources */,
 				ADB689552326708D006D4E2B /* SceneDelegate.swift in Sources */,
+				1632E21F236CF9AE00798FC0 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,12 +317,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TMWXHXD2X4;
 				INFOPLIST_FILE = Tipsy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.appbrewery.Tipsy;
+				PRODUCT_BUNDLE_IDENTIFIER = co.appbrewery.Tipsy.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,12 +335,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TMWXHXD2X4;
 				INFOPLIST_FILE = Tipsy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.appbrewery.Tipsy;
+				PRODUCT_BUNDLE_IDENTIFIER = co.appbrewery.Tipsy.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
